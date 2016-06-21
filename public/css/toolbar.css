@@ -1,0 +1,53 @@
+/**
+ * toolbar.css
+ */
+.header {
+    height: 75px;
+    background-color: #f2f2f2;
+}
+
+.toolbar {
+    height: 45px;
+    line-height: 45px;
+}
+
+.main-buttons {
+    float: right;
+    display: block;
+    padding-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main-buttons a {
+    /*color: transparent;*/
+    color: #212121;
+    cursor: default;
+    display: inline-block;
+    margin-left: 1px;
+    font-size: 12px;
+    width: 13px;
+    height: 12px;
+    line-height: 15px;
+    padding: 1px 0 0 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    transition: ease 0.4s all;
+    border: 1px solid transparent;
+}
+.main-buttons a:hover {
+    color: #212121;
+}
+/*.main-buttons a.close {
+    border-color: #e0403e;
+    background-color: #fc615d;
+}
+.main-buttons a.resize {
+    border-color: #20a92f;
+    background-color: #34c84a;
+}
+.main-buttons a.minify {
+    border-color: #de9d2e;
+    background-color: #fdbd41;
+}*/

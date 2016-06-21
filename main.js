@@ -14,11 +14,11 @@ let mainWindow
 
 function createWindow () {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600, toolbar: false}); // frameless window
+    mainWindow = new BrowserWindow({ width: 1200, height: 800, toolbar: false, webPreferences: {nodeIntegration: true}, frame: false }); // frameless window
 
     // and load the index.html of the app.
     mainWindow.loadURL(`file://${__dirname}/index.html`)
-    
+
     // Open the DevTools
     // mainWindow.webContents.openDevTools()
 

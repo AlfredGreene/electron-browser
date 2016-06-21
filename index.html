@@ -3,24 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="./public/css/englyph.css" />
     <link rel="stylesheet" href="./public/css/common.css" />
+    <link rel="stylesheet" href="./public/css/tabs.css" />
+    <link rel="stylesheet" href="./public/css/toolbar.css" />
+    <link rel="stylesheet" href="./public/css/search.css" />
+    <script data-main="public/js/AppKernel.js" src="./public/js/lib/require-2.2.0.js"></script>
 </head>
 <body>
     <div class="main">
-        <ul class="tabs">
-            <li><a href=""></a></li>
-        </ul>
+
+        <!-- browser header -->
+        <div class="header" id="header">
+
+            <div class="main-buttons">
+                <!-- <a class="minify" href=""><span class="cs-plus"></span></a> -->
+                <a class="resize" href=""><span class="cs-minus"></span></a>
+                <a class="close" href=""><span class="cs-cross"></span></a>
+            </div>
+
+            <ul class="tabs" id="tabs">
+                <!-- <li>
+                    <a class="tab" href="">Tab name</a>
+                    <a class="close" href="" data-toggle="close"><span class="cs-cross"></span></a>
+                </li>
+                <li>
+                    <a class="tab" href="">Tab name</a>
+                    <a class="close" href="" data-toggle="close"><span class="cs-cross"></span></a>
+                </li>
+                <li>
+                    <a class="tab" href="">Tab name</a>
+                    <a class="close" href="" data-toggle="close"><span class="cs-cross"></span></a>
+                </li> -->
+                <li id="last-tab">
+                    <a class="tab tab-new" href="" data-toggle="new"><span class="cs-plus"></span></a>
+                </li>
+                <li class="clearfix"></li>
+            </ul>
+
+            <div class="toolbar clearfix">
+                <form class="search" id="search">
+                    <div class="search-bar">
+                        <input type="text" name="s" value="" placeholder="" />
+                        <button><span class="cs-magnifying-glass"></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end browser header -->
+
+        <!-- content of the browser -->
+        <div class="content clearfix" id="container" data-require="AppBundle:DefaultController"></div>
     </div>
 
-    <h1>Hello World!</h1>
     <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
+    <!-- We are using node <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    and Electron <script>document.write(process.versions.electron)</script>. -->
 </body>
 
   <script>
     // You can also require other files to run in this process
-    require('./renderer.js')
+    // require('./renderer.js')
   </script>
 </html>

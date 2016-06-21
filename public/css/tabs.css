@@ -1,0 +1,78 @@
+/**
+ * tabs.css
+ */
+ul.tabs {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    font-size: 0.9em;
+    list-style-type: none;
+    background-color: #d2d2d2;
+}
+
+ul.tabs > li {
+    display: block;
+    float: left;
+    position: relative;
+    /*transition: ease 0.5s all;*/
+}
+
+ul.tabs > li > a.tab {
+    color: #333;
+    cursor: default;
+    display: block;
+    line-height: 35px;
+    padding: 0 35px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+    transition: ease 0.5s all;
+}
+
+ul.tabs > li > a.tab:hover {
+    color: #212121;
+    background-color: #e6e6e6;
+}
+
+ul.tabs > li > a.close {
+    cursor: default;
+    display: none;
+    position: absolute;
+    color: gray;
+    top: 9px;
+    right: 5px;
+    width: 14px;
+    padding: 1px 2px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease 0.3s all;
+}
+ul.tabs > li > a.close:hover {
+    color: #212121;
+}
+
+/* Show close button only when li is hovered */
+ul.tabs > li:hover .close {
+    display: block;
+}
+
+ul.tabs > li > a.tab.selected {
+
+}
+
+/* New tab button */
+ul.tabs > li > a.tab.tab-new {
+    color: #565656;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: transparent;
+}
+ul.tabs > li > a.tab.tab-new:hover {
+    color: #212121;
+    background-color: #e6e6e6;
+}
+ul.tabs > li > a.tab.tab-new > span.cs-plus {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
